@@ -1,4 +1,4 @@
-# Object Oriented Email Parser
+# Email Parser Lab
 
 ## Learning Goals
 
