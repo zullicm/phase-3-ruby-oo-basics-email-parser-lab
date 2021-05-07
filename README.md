@@ -5,6 +5,8 @@
 - Build a class that uses an initialize method
 - Practice using an attribute accessor macro to make an attribute available to a
   class's methods
+- Learn about Ruby's `String.split` method
+- Learn about RegEx
 
 ## Description
 
