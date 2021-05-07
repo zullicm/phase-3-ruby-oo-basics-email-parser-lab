@@ -1,18 +1,19 @@
-# Email Parser Lab
+# Bonus: Email Parser Lab
 
 ## Learning Goals
 
-- Practice defining a class and using an `attr_accessor` to create setter and
-  getter methods
-- Use TDD to write working code
+- Build a class that uses an initialize method
+- Practice using an attribute accessor macro to make an attribute available to a
+  class's methods
 
 ## Description
 
-You will be writing an `EmailAddressParser` class that gets initialized with a string
-of emails.
+You will write a program that, given a string of email addresses, parses that
+string into an array.
 
-Your job is to parse those email addresses into a useful array using an instance
-method, `parse`.
+Your class, `EmailAddressParser`, should take the string of addresses on
+initialization. Instances should respond to a `parse` instance method that
+parses the string into individual email addresses and returns them in an array.
 
 I should be able to do this:
 
@@ -24,9 +25,9 @@ parser.parse
 # => ["john@doe.com", "person@somewhere.org"]
 ```
 
-You should be able to initialize with a list of email addresses either separated
-with spaces _or_ separated with commas. The `parse` method should, additionally,
-only return unique addresses.
+**Note:** Your `EmailAddressParser` class should handle a list of email
+addresses that are separated by either spaces _or_ commas. Additionally, the
+`parse` method should only return unique addresses.
 
 ## Instructions
 
@@ -35,6 +36,13 @@ output to get the program working.
 
 **Hints:**
 
-- How will you control for parsing a list of email addresses that is _either_
-  comma separated _or_ separated by a white space?
-- Use an `attr_accessor` to set and get the list of email addresses
+In order to get this lab passing, you will need to do some research into the
+following topics:
+
+- [Ruby's `String.split` method](https://www.rubydoc.info/stdlib/core/String:split)
+- [RegEx](https://www.rubyguides.com/2015/06/ruby-regex/) - you'll use this to
+  specify which characters to split the string on
+
+## Resources
+
+- [RegExr: Learn, Build, & Test RegEx](https://regexr.com/)
